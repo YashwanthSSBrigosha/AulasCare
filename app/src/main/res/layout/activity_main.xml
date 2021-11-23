@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginRight="24dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lytFindVaccineCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F6F4FE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtFindVaccineCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/roboto"
+                android:shadowColor="#191919"
+                android:text="Find the nearest Vaccination Center"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#191919"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtSource"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto"
+                android:text="Source:"
+                android:textAlignment="textStart"
+                android:textColor="#AEAEAE"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtFindVaccineCenter" />
+
+            <TextView
+                android:id="@+id/txtWho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto"
+                android:text="who.int"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/txtSource"
+                app:layout_constraintTop_toBottomOf="@+id/txtFindVaccineCenter" />
+
+            <TextView
+                android:id="@+id/txtCovidDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:text="The COVID-19 vaccines are safe for most people 18 years and older, including those with pre-existing conditions of any kind, including auto-immune disorders."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWho" />
+
+            <Button
+                android:id="@+id/btnFindVaccinationCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#594099"
+                android:fontFamily="@font/roboto"
+                android:text="FIND A VACCINATION CENTER"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:cornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCovidDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtPrevent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/roboto"
+            android:text="Prevent the spread of COVID-19"
+            android:textColor="#191919"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lytFindVaccineCenter" />
+
+        <TextView
+            android:id="@+id/txtSource1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto"
+            android:text="Source: "
+            android:textColor="#AEAEAE"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrevent" />
+
+        <TextView
+            android:id="@+id/txtWho1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto"
+            android:text="who.int"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/txtSource1"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrevent" />
+
+        <ImageView
+            android:id="@+id/imgPrevention"
+            android:layout_width="366dp"
+            android:layout_height="326dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:foregroundGravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtWho1"
+            tools:srcCompat="@drawable/ic_account_details" />
+
+        <Button
+            android:id="@+id/btnLearnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/roboto"
+            android:text="LEARN MORE"
+            android:textColor="#594099"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPrevention" />
+
+        <TextView
+            android:id="@+id/txtKnowYourVaccine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Know your vaccines"
+            android:textColor="#191919"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLearnMore" />
+
+        <TextView
+            android:id="@+id/txtSource2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto"
+            android:text="Source: "
+            android:textColor="#AEAEAE"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtKnowYourVaccine" />
+
+        <TextView
+            android:id="@+id/txtTrackVaccine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto"
+            android:text="covid19.trackvaccines.org"
+            android:textColor="#AEAEAE"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/txtSource2"
+            app:layout_constraintTop_toBottomOf="@+id/txtKnowYourVaccine" />
+
+        <TextView
+            android:id="@+id/txtVaccinesApprovedInIndia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto"
+            android:text="7 Vaccines Approved for Use in India."
+            android:textColor="#636363"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTrackVaccine" />
+
+        <RelativeLayout
+            android:id="@+id/lytRelativeForCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtVaccinesApprovedInIndia">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cardRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSeeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="SEE ALL"
+            android:textColor="#594099"
+            app:cornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lytRelativeForCard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
